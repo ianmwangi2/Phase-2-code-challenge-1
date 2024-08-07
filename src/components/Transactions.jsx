@@ -19,6 +19,18 @@ function Transactions() {
                 <th>Category</th>
                 <th>Amount</th>
             </tr>
+            {
+                transactions.map(transaction => {
+                    return (
+                        <tr>
+                            <td>{transaction.date}</td>
+                            <td>{transaction.description}</td>
+                            <td>{transaction.category}</td>
+                            <td>{transaction.amount}</td>
+                        </tr>
+                    )
+                })
+            }
         </table>
     </div>
   )
