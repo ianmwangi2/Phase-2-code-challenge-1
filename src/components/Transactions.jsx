@@ -6,12 +6,21 @@ function Transactions() {
     useEffect(() => {
         fetch('http://localhost:3000/transactions')
         .then(res => res.json())
-        .then(data => setTransactions(data))
+        .then(transactions => setTransactions(transactions))
         .catch(e => console.log(e))
     }, [])
 
   return (
-    <div>Transactions</div>
+    <div>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Amount</th>
+            </tr>
+        </table>
+    </div>
   )
 }
 

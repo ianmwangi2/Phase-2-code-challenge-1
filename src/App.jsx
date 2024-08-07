@@ -8,6 +8,7 @@ const App = () => {
       <div className='header'>
         <h1>THE BANK OF FLATIRON</h1>
       </div>
+      <Transactions />
     </div>
   )
 }
