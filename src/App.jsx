@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import Transactions from './components/Transactions'
 
 const App = () => {
   return (
