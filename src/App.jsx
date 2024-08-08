@@ -9,7 +9,7 @@ const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:3000/transactions')
+    fetch('https://json-server-sooty-omega.vercel.app/transactions')
       .then((res) => res.json())
       .then((transactions) => setTransactions(transactions))
       .catch((e) => console.log(e));

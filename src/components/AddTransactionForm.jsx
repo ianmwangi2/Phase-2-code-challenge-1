@@ -14,7 +14,7 @@ const AddTransactionForm = ({ onAddTransaction }) => {
       category,
       amount
     };
-    fetch('http://localhost:3000/transactions', {
+    fetch('https://json-server-sooty-omega.vercel.app/transactions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
