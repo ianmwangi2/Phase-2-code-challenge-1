@@ -22,13 +22,13 @@ const App = () => {
   const handleSearch = (term) => {
     setSearchTerm(term);
   };
-  
+
   const filteredTransactions = transactions.filter((transaction) =>
     transaction.description.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
-    <div>
+    <div className='app'>
       <div className='header'>
         <h1>THE BANK OF FLATIRON</h1>
       </div>
