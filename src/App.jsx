@@ -23,6 +23,16 @@ const App = () => {
     setSearchTerm(term);
   };
 
+  // const handleDeleteTransaction = (id) => {
+  //   fetch(`https://json-server-sooty-omega.vercel.app/transactions/${id}`, {
+  //     method: 'DELETE'
+  //   })
+  //     .then(() => {
+  //       setTransactions(transactions.filter(transaction => transaction.id !== id));
+  //     })
+  //     .catch((error) => console.error());
+  // }
+
   const filteredTransactions = transactions.filter((transaction) =>
     transaction.description.toLowerCase().includes(searchTerm.toLowerCase())
   );
