@@ -19,8 +19,8 @@ function Transactions() {
                 <th>Category</th>
                 <th>Amount</th>
             </tr>
-            <tr>
-                {transactions.map(transaction => {
+            {
+                transactions.map(transaction => {
                     return (
                         <tr>
                             <td>{transaction.date}</td>
@@ -29,8 +29,8 @@ function Transactions() {
                             <td>{transaction.amount}</td>
                         </tr>
                     )
-                })}
-            </tr>
+                })
+            }
         </table>
     </div>
   )
