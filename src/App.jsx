@@ -10,9 +10,12 @@ const App = () => {
       <div className='header'>
         <h1>THE BANK OF FLATIRON</h1>
       </div>
-      <FilterForm />
+      <div className='forms'>
+        <AddTransactionForm />
+        <br></br>
+        <FilterForm />
+      </div>
       <Transactions />
-      <AddTransactionForm />
     </div>
   )
 }

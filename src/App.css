@@ -13,6 +13,8 @@ table{
 }
 tr,td,th,table{
   border: 1px solid;
+  background-color: #081B4B;
+  color: white;
 }
 th{
   background: #081B4B;
@@ -21,4 +23,27 @@ th{
 }
 td{
   padding: 10px;
+}
+.filter-form {
+  border: 2px solid black;
+  padding: 2px;
+  border-radius: 4px;
+  background-color: #081B4B;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  align-items: center;
+}
+.form {
+  border: 2px solid black;
+  padding: 3px;
+  display: flex;
+  background-color: #081B4B;
+  color: white;
+}
+.forms {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
 }
