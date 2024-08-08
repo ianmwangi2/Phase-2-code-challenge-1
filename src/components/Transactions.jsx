@@ -19,11 +19,6 @@ const Transactions = ({ transactions }) => {
               <td>{transaction.description}</td>
               <td>{transaction.category}</td>
               <td>{transaction.amount}</td>
-              {/* <td>
-                <button onClick={(handleDeleteTransaction) => onDeleteTransaction(transaction.id)}>
-                    DELETE
-                </button>
-              </td> */}
             </tr>
           ))}
         </tbody>

@@ -83,6 +83,13 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "id": "647b",
+      "date": "2024-08-08",
+      "description": "Flight ticket",
+      "category": "Transport",
+      "amount": "-1000"
     }
   ]
 }
